@@ -1,10 +1,15 @@
 # Sega Saturn CD drive log
 
 > Command clock is 50khz
+
 > 26us between 2 byte
+
 > START signal mark the 1st byte
+
 > Communication seem to use SPI mode 3 
+
 > Data are sent in LSB order
+
 
 # Command List
 
