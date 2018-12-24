@@ -47,6 +47,23 @@
 [Yabause code](https://github.com/Yabause/yabause/blob/7e38821dbac265490f115e163c523a939acda759/yabause/src/cd_drive.c#L83)
 
 
+## Status structure
+| #byte |                        | comment       |
+| ----- | ---------------------- | ------------  |
+|  1    | Current status         |               |
+|  2    | q subcode              |               |
+|  3    | track number           |               |
+|  4    | index field            |               |
+|  5    | minutes                |               |
+|  6    | secondes               |               |
+|  7    | frame                  |               |
+|  8    | ??                     | 0 or 4        |
+|  9    | absolute min           |               |
+| 10    | absolute sec           |               |
+| 11    | absolute frame         |               |
+| 12    | checksum               | ~(DATA[1]...DATA[11]) |
+| 13    | ??                     | Always 0 ?    |
+
 ## NOP Command
 
 ### LID OPEN - status 0x80
