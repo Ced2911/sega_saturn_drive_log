@@ -85,7 +85,9 @@
 
 > Transmit data in serial, 24bit, 8Bit header? 16Bit data?
 
-> Use 2.12mhz Clock
+> Data/Audio seem to be transfered by i2s
+
+> With 3Mhz or 6Mhz clock (cd-rom 1x/2x speed ?)
 
 > CD_BIN_OE is not OE, it's a flag
 
@@ -104,14 +106,14 @@
 |  8    | GND               |               |
 |  9    | 8Mhz Clk          | main clock ?  |
 | 10    | GND               |               |
-| 11    | AUDIO_DATA?       |               |
-| 12    | AUDIO_CLK?        |               |
-| 13    | ??                |               |
-| 14    | GND               |               |
-| 15    | ERROR?            |               |
-| 16    | CD_BIN_OE         |               |
-| 17    | CD_BIN_CLK?       |               |
-| 18    | CD_BIN_DATA       |               |
+| 11    | AUDIO_DATA?       | Wrong         |
+| 12    | AUDIO_CLK?        | Wrong         |
+| 13    | ??                | Wrong         |
+| 14    | GND               | Wrong         |
+| 15    | ERROR?            | Wrong         |
+| 16    | CD_BIN_OE?        | Wrong - Act like a flag |
+| 17    | CD_BIN_CLK?       | Wrong         |
+| 18    | CD_BIN_DATA?      | Wrong         |
 | 19    | GND               |               |
 | 20    | FRONT PANEL LED   |               |
 
