@@ -20,8 +20,8 @@
 |  0x03 | Read toc               |               |
 |  0x04 | Stop disc              |               |
 |  0x05 | ??                     |               |
-|  0x0A | ??                     |               |
-|  0x0B | ??                     |               |
+|  0x0A | Audio forward          | in cd player  |
+|  0x0B | Audio backward         | in cd player  |
 |  0x06 | Read Data              |               |
 |  0x08 | Pause                  |               |
 |  0x09 | Seek                   |               |
@@ -81,7 +81,15 @@
 | cmd    | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0xFF | 0x00 |
 
 
-## Pinout
+# Binary data - Todo
+
+> Transmit data in serial, 24bit, 8Bit header? 16Bit data?
+
+> Use 2.12mhz Clock
+
+> CD_BIN_OE is not OE, it's a flag
+
+# Pinout
 20 Pin drive
 
 | Pin   | name              | comment       |
