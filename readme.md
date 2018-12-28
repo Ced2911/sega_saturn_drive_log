@@ -89,7 +89,21 @@
 
 > With 3Mhz or 6Mhz clock (cd-rom 1x/2x speed ?)
 
+> Some clock is running at 
+
 > CD_BIN_OE is not OE, it's a flag
+
+> PIN 13 is toggle at 41hz or 84hz like CD_BIN_OE
+
+> CD_BIN_CLK is running at 2.1Mhz or 4Mhz
+
+> CD_BIN_DATA is 24Bit long
+
+> PIN 15 seem to be always low
+
+> PIN 12 seem to be a clock
+
+> PIN 11 Always low
 
 # Pinout
 20 Pin drive
@@ -113,7 +127,7 @@
 | 15    | ERROR?            | Wrong         |
 | 16    | CD_BIN_OE?        | Wrong - Act like a flag |
 | 17    | CD_BIN_CLK?       | Wrong         |
-| 18    | CD_BIN_DATA?      | Wrong         |
+| 18    | CD_BIN_DATA?      | Wrong - Some data |
 | 19    | GND               |               |
 | 20    | FRONT PANEL LED   |               |
 
