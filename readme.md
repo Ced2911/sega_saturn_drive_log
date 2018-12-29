@@ -115,10 +115,10 @@
 |  9    | 8Mhz Clk          | main clock ?  |
 | 10    | GND               |               |
 | 11    | Low?              | Always low?   |
-| 12    | Clk?              | Wrong         |
-| 13    | ??                | L/R Channel?? |
+| 12    | Clk?              | Not used ? Clk ?? Wrong         |
+| 13    | ??                | Not used ? / L/R Channel?? |
 | 14    | GND               | Could it be a setting |
-| 15    | Marker?           | Not needed    |
+| 15    | Marker?           | Not used ?    |
 | 16    | LRCK ?            | i2s L/R channel |
 | 17    | BCLK ?            | i2s Clock     |
 | 18    | SDATA ?           | i2s Data      |
