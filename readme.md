@@ -91,17 +91,11 @@
 
 > Some clock is running at 
 
-> CD_BIN_OE is not OE, it's a flag
+> PIN 13 toggle at 41hz or 88hz like LRCK
 
-> PIN 13 is toggle at 41hz or 84hz like CD_BIN_OE
+> BCLK is running at 2.1Mhz or 4Mhz
 
-> CD_BIN_CLK is running at 2.1Mhz or 4Mhz
-
-> CD_BIN_DATA is 24Bit long
-
-> PIN 15 seem to be always low
-
-> PIN 12 seem to be a clock
+> SDATA is 24Bit long
 
 > PIN 11 Always low
 
@@ -120,14 +114,14 @@
 |  8    | GND               |               |
 |  9    | 8Mhz Clk          | main clock ?  |
 | 10    | GND               |               |
-| 11    | AUDIO_DATA?       | Wrong         |
-| 12    | AUDIO_CLK?        | Wrong         |
-| 13    | ??                | Wrong         |
-| 14    | GND               | Wrong         |
-| 15    | ERROR?            | Wrong         |
-| 16    | CD_BIN_OE?        | Wrong - Act like a flag |
-| 17    | CD_BIN_CLK?       | Wrong         |
-| 18    | CD_BIN_DATA?      | Wrong - Some data |
+| 11    | Low?              | Always low?   |
+| 12    | Clk?              | Wrong         |
+| 13    | ??                | L/R Channel?? |
+| 14    | GND               | Could it be a setting |
+| 15    | Marker?           | Not needed    |
+| 16    | LRCK ?            | i2s L/R channel |
+| 17    | BCLK ?            | i2s Clock     |
+| 18    | SDATA ?           | i2s Data      |
 | 19    | GND               |               |
 | 20    | FRONT PANEL LED   |               |
 
